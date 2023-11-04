@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DirectorioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/directorio', [DirectorioController::class,'index'])->name('directorio.inicio');
+Route::get('/diectorio/agregar',[DirectorioController::class, 'create'])->name('directorio.agregar');
+Route::get('/diectorio/buscar',[DirectorioController::class, 'search'])->name('directorio.buscar');
+Route::get('/diectorio/verContacto/{id}',[DirectorioController::class, 'see'])->name('directorio.verContacto');
+Route::get('/diectorio/eliminar',[DirectorioController::class, 'delete'])->name('directorio.eliminar');
