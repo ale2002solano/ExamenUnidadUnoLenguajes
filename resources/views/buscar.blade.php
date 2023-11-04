@@ -37,7 +37,7 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                <div class="mt-8 bg-white  overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="card">
                             <h3 class="card-header">Buscar Entrada</h3>
@@ -47,7 +47,7 @@
                                     <input type="text" class="form-control" name ="correo">
                                     <p>
                                         <a href="#" class="btn btn-success">Buscar</a>
-                                        <a href="#" class="btn btn-info">Regresar</a>
+                                        <a href="{{ route('directorio.inicio')}}" class="btn btn-info">Regresar</a>
                                     </p>                                    
                                 </p>
                             </div>
